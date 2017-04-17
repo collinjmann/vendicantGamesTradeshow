@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+/*Basic Formating*/
+*
+{
+    padding:0px;
+    margin:0px;
+}
+body
+{
+    color:#ffffff;
+    font-family:'Roboto', sans-serif;
+    background-image:url("../images/controller.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+}
+h2
+{
+    font-weight:100;
+    font-size:3em;
+    margin-bottom:10px;
+}
+p
+{
+    line-height:30px;
+}
+/*Header Section*/
+header
+{
+    height:50vh;
+    display:flex;
+    justify-content:flex-end;
+}
+header div
+{
+    font-family:'Orbitron', sans-serif;
+    color:#ffffff;
+    background-color:rgba(13, 13, 13, 0.7);
+    align-self:center;
+    padding:30px;
+    margin-right:120px;
+    max-width:710px;
+    font-size:4em;
+    text-align:right;
+}
+header div span
+{
+    color:#ffff00;
+}
+/*Main Section*/
+main
+{
+    background-color:#1a1a1a;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    min-height:50vh;
+}
+section
+{
+    width:40%;
+    padding:30px;
+    background-color:#202020;
+    display:flex;
+    flex-wrap:wrap;
+    align-content:center;
+    justify-content:center;
+}
+section:nth-of-type(odd)
+{
+    background-color:#333333;
+}
+/*Articles*/
+article
+{
+    align-self:center;
+    width:100%;
+}
+article div
+{
+    margin-top:30px;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+article img
+{
+    width:200px;
+    padding:15px;
+    align-self:flex-start;
+}
+/*Form*/
+form
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width:80%;
+}
+form fieldset
+{
+    padding:15px;
+    width:100%;
+    border:1px solid #ffffff;
+}
+form div
+{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+form span
+{
+    width:20%;
+}
+form fieldset input
+{
+    width:60%;
+    height:16px;
+    align-self:flex-end;
+    border:none;
+    padding:2px;
+}
+form > input
+{
+    padding:10px;
+    width:45%;
+    margin-top:15px;
+    background-color:#202020;
+    border:1px solid #ffffff;
+    color:#ffffff;
+    font-family:'Orbitron', sans-serif;
+    font-size:20px;
+    transition:background-color, 0.25s;
+    cursor:pointer;
+}
+form > input:hover
+{
+    background-color:#424242;
+}
+/*Footer*/
+footer
+{
+    background-color:#000000;
+    text-align:center;
+    padding:15px;
+}
+footer a
+{
+    color:#ffffff;
+}
+/*Id and Temp Styles*/
+#button
+{
+    width:300px;
+    height:35px;
+    background-color:rgba(13, 13, 13, 0.7);
+    margin:auto;
+    display:flex;
+    justify-content:space-around;
+}
+#button div
+{
+    background-color:#999999;
+    height:15px;
+    width:15px;
+    align-self:center;
+}

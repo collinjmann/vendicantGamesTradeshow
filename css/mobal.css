@@ -1,0 +1,42 @@
+/*Header Section*/
+header 
+{
+    justify-content:center;
+}
+header div
+{
+    width:80vw;
+    margin:0px;
+}
+/*Media Queries*/
+@media screen and (max-width:790px)
+{
+    header div
+    {
+        font-size:2em;
+        text-align:center;
+    }
+    main
+    {
+        flex-wrap:wrap;
+    }
+    section
+    {
+        width:80%;
+    }
+    form
+    {
+        width:100%;
+    }
+}
+@media screen and (max-width:350px)
+{
+    h2
+    {
+        font-size:1.8em;
+    }
+    #button
+    {
+        width:80%;
+    }
+}
