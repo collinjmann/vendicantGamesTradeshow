@@ -39,4 +39,8 @@ header div
     {
         width:80%;
     }
+    form > input
+    {
+        font-size:10px;
+    }
 }
