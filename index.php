@@ -66,11 +66,11 @@ include 'php/config.php';
                         </div>
                         <div>
                             <span>First Name: </span>
-                            <input type="text" name="f_name" required />
+                            <input type="text" name="fname" required />
                         </div>
                         <div>
                             <span>Last Name: </span>
-                            <input type="text" name="l_name" required />
+                            <input type="text" name="lname" required />
                         </div>
                     </fieldset>
                     <input type="submit" />
