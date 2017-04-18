@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-$servername = "vgtradeshow.db.5308118.hostedresource.com";
-$username = "vgtradeshow";
-$password = "P2ssw#rd";
-$dbname = "vgtradeshow";
+$servername = "http://www.kuzmaclass.org";
+$username = "root";
+$password = "";
+$dbname = "tradeshow_rvsp";
 $tname = "responses";
 $admin = "noah.pikaart.wgd@gmail.com";
 

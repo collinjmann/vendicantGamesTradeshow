@@ -1,13 +1,13 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "tradeshow_rvsp";
+$servername = "vgtradeshow.db.5308118.hostedresource.com";
+$username = "vgtradeshow";
+$password = "P2ssw#rd";
+$dbname = "vgtradeshow";
 $tname = "responses";
 
-$conn = new mysqli($servername, $username, $password);
-$sql = "CREATE DATABASE IF NOT EXISTS $dbname";
-$conn->query($sql);
+#$conn = new mysqli($servername, $username, $password);
+#$sql = "CREATE DATABASE IF NOT EXISTS $dbname";
+#$conn->query($sql);
 $conn = new mysqli($servername, $username, $password, $dbname);
 $sql = "CREATE TABLE IF NOT EXISTS $tname (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
