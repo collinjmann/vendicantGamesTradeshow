@@ -138,5 +138,6 @@ if($fname != null && $lname != null && $email != null)
         ';
 }
 
+$conn -> close();
 
 ?>
