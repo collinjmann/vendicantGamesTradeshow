@@ -31,6 +31,10 @@ header div
 }
 @media screen and (max-width:350px)
 {
+    header div
+    {
+        width:100%;
+    }
     h2
     {
         font-size:1.8em;
@@ -41,6 +45,11 @@ header div
     }
     form > input
     {
-        font-size:10px;
+        font-size:14px;
+    }
+    section
+    {
+        padding:15px;
+        width:100%;
     }
 }
