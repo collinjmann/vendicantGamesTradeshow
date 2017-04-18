@@ -42,7 +42,7 @@ if($fname != null && $lname != null && $email != null)
 
         if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
             if(@mail($email, $subject,$message,$headers)) {
-                $_session["submission_results"] = true;
+                $_SESSION["submission_results"] = true;
                 echo "<script>window.location.href = '../index.php'</script>";
             } else {
                 $_SESSION["email_error"] = true;

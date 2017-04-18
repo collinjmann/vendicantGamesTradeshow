@@ -20,7 +20,8 @@ include 'php/config.php';
                 if($_SESSION["submission_results"] == false && $_SESSION["submission_results"] != null) {
                     echo "<script>alert('An error occured. Please try again later.');</script>";
                     $_SESSION["submission_results"] = null;
-                } else if($_SESSION["submission_results"] == true) {
+                }
+                if($_SESSION["submission_results"] == true) {
                     echo "<script>alert('Your submission was sucessfully recorded');</script>";
                     $_SESSION["submission_results"] = null;
                 }
