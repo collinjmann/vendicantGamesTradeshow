@@ -1,3 +1,8 @@
+<?php
+session_start();    
+include 'php/config.php';
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -10,6 +15,35 @@
     </head>
     
     <body>
+        <?php
+            if(isset($_SESSION["submission_results"])) {
+                if($_SESSION["submission_results"] == false && $_SESSION["submission_results"] != null) {
+                    echo "<script>alert('An error occured. Please try again later.');</script>";
+                    $_SESSION["submission_results"] = null;
+                } else if($_SESSION["submission_results"] == true) {
+                    echo "<script>alert('Your submission was sucessfully recorded');</script>";
+                    $_SESSION["submission_results"] = null;
+                }
+            }
+            
+            
+            if(isset($_SESSION['email_taken'])) {
+                if($_SESSION['email_taken'] == true) {
+                    echo "<script>alert('The email you entered is already in use. Please enter a different email.');</script>";
+                    $_SESSION["email_taken"] = null;
+                }
+            }
+        
+        if(isset($_SESSION["form_incomplete"])) {
+            if($_SESSION["form_incomplete"] == true) {
+                 echo "<script>alert('Not all fields were filled out. Please fill out missing fields before submitting');</script>";
+                $_SESSION["form_incomplete"] = null;
+            }
+        }
+            
+        
+        ?>
+        
         <header>
             <div><span>Vendicant Games</span> Trade Show</div>
         </header>
@@ -32,7 +66,7 @@
             
             <section>
                 <h2>Sign Up!</h2>
-                <form method="post" action="php/submit.php">
+                <form method="post" action="php/proscess.php">
                     <fieldset>
                         <legend>User Information</legend>
                         <div>
