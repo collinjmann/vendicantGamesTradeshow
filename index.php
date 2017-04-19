@@ -46,7 +46,7 @@ include 'php/config.php';
         ?>
         
         <header>
-            <div><span>Vendicant Games</span> <br />Trade Show</div>
+            <div><span>Vendicant Games</span><br />Trade Show</div>
         </header>
         
         <div id="button">
