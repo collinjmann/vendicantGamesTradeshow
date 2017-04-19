@@ -19,7 +19,7 @@ $email = preg_replace('/[^A-Za-z0-9.@\-]/', '', $_POST["email"]);
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-if($fname != null && $lname != null && $email != null)
+if($fname != null && $lname != null && $email != null && filter_var($email, FILTER_VALIDATE_EMAIL))
 {
     $sql = "SELECT * FROM responses WHERE email = '$email'";
     $result = $conn->query($sql);
@@ -80,32 +80,29 @@ if($fname != null && $lname != null && $email != null)
             
             $subject = "Vendicant Games Trade Show";
             $message = "Thanks for signing up! We'll send you a reminder several days before the event starts";
+            
+            if(@mail($email, $subject,$message,$headers)) {
 
-            if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                if(@mail($email, $subject,$message,$headers)) {
+                echo "<script>window.location.href = '../index.php'</script>";
 
-                    echo "<script>window.location.href = '../index.php'</script>";
+                echo '<!DOCTYPE html>
+                <html>
+                    <head>  
+                        <meta charset = "utf-8" />
+                        <meta name = "viewport" content = "width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+                        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+                        <title>Results</title>
+                    </head>
 
-                    echo '<!DOCTYPE html>
-                    <html>
-                        <head>  
-                            <meta charset = "utf-8" />
-                            <meta name = "viewport" content = "width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
-                            <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-                            <title>Results</title>
-                        </head>
+                    <body style="display:flex;flex-flow:row wrap;justify-content:center;align-items:center">
+                        <div style="margin:0 auto;font-size:3rem;font-family:orbitron;">Your response was sucessfully recorded.
+                            <br/>
+                            <a style = "display: block; color: #ffffff; font-family: orbitron;font-size:1.25rem; margin:1rem auto; text-decoration: none; height: 40px; width: 130px; line-height: 40px;background-color: #1a1a1a; text-align: center;" href = "http://kuzmaclass.org/sandbox/VendicantGamesStoryboard1.10PM/contact.php">Back</a>
+                        </div>
+                    </body>
 
-                        <body style="display:flex;flex-flow:row wrap;justify-content:center;align-items:center">
-                            <div style="margin:0 auto;font-size:3rem;font-family:orbitron;">Your response was sucessfully recorded.
-                                <br/>
-                                <a style = "display: block; color: #ffffff; font-family: orbitron;font-size:1.25rem; margin:1rem auto; text-decoration: none; height: 40px; width: 130px; line-height: 40px;background-color: #1a1a1a; text-align: center;" href = "http://kuzmaclass.org/sandbox/VendicantGamesStoryboard1.10PM/contact.php">Back</a>
-                            </div>
-                        </body>
-
-                    </html>
-                    ';
-            }
-        
+                </html>
+                ';
             } else {
                 $_SESSION["email_error"] = true;
                 echo "<script>window.location.href = '../index.php'</script>";
@@ -114,7 +111,7 @@ if($fname != null && $lname != null && $email != null)
         }
     }
 
-} else if( $fname == null || $lname == null || $email == null) {
+} else if( $fname == null || $lname == null || $email == null || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $_SESSION["form_incomplete"] = true;
     echo "<script>window.location.href = '../index.php'</script>";
     
@@ -138,6 +135,6 @@ if($fname != null && $lname != null && $email != null)
         ';
 }
 
-$conn -> close();
+$conn->close();
 
 ?>
