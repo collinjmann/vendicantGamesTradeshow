@@ -14,8 +14,8 @@ include 'php/config.php';
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     </head>
     
-    <body>
-        <?php
+    <body id="header">
+        <!--?php
             if(isset($_SESSION["submission_results"])) {
                 if($_SESSION["submission_results"] == false && $_SESSION["submission_results"] != null) {
                     echo "<script>alert('An error occured. Please try again later.');</script>";
@@ -43,16 +43,13 @@ include 'php/config.php';
         }
             
         
-        ?>
+        ?-->
         
         <header>
             <div><span>Vendicant Games</span> <br />Trade Show</div>
         </header>
         
         <div id="button">
-            <div></div>
-            <div></div>
-            <div></div>
         </div>
         
         <main>
@@ -92,5 +89,8 @@ include 'php/config.php';
         <footer>
             <span>&copy; Vendicant Games, all rights reserved | Email Webmaster: <a href="mailto:noah.pikaart.wgd@gmail.com">noah.pikaart.wgd@gmail.com</a></span>
         </footer>
+        
+        <script src="javascript/slideshowBackground.js"></script>
+        <script src="javascript/main.js"></script>
     </body>
 </html>

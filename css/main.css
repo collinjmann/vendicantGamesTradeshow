@@ -12,9 +12,11 @@ body
     font-family:'Roboto', sans-serif;
     background-image:url("../images/controller.jpg");
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:cover 60vh;
     background-attachment:fixed;
+    background-position:top center;
     overflow-x:hidden;
+    background-color:#000000;
 }
 h2
 {
@@ -157,17 +159,33 @@ footer a
 /*Id and Temp Styles*/
 #button
 {
+    display:none;
     width:300px;
     height:35px;
     background-color:rgba(13, 13, 13, 0.7);
     margin:auto;
+}
+#button > div
+{
+    width:100%;
     display:flex;
     justify-content:space-around;
+    height:100%;
 }
-#button div
+#button div div
 {
-    background-color:#999999;
+    background-color:#888888;
     height:15px;
     width:15px;
     align-self:center;
+    transition:background-color 0.5s;
+    cursor:pointer;
+}
+#header
+{
+    transition:background-image, 2s;
+}
+#button div div.active
+{
+    background-color:#ffffff;
 }
