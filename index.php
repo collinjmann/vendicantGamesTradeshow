@@ -15,7 +15,7 @@ include 'php/config.php';
     </head>
     
     <body id="header">
-        <!--?php
+        <?php
             if(isset($_SESSION["submission_results"])) {
                 if($_SESSION["submission_results"] == false && $_SESSION["submission_results"] != null) {
                     echo "<script>alert('An error occured. Please try again later.');</script>";
@@ -43,7 +43,7 @@ include 'php/config.php';
         }
             
         
-        ?-->
+        ?>
         
         <header>
             <div><span>Vendicant Games</span> <br />Trade Show</div>
