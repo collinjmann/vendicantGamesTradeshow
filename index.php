@@ -77,10 +77,10 @@ include 'php/config.php';
             </section>
             
             <section>
-                <article>
+                <article id="description">
                     <h2>Lorum Ipsum</h2>
                     <p>
-                        Web & Game Development invite you to the 1st Tradeshow where students will highlight their products made this year! RSVP requested using the form to the left.
+                        Web and Game Development invite you to the first Tradeshow where students will highlight their products made this year! RSVP requested using the form to the left.
                     </p>
                 </article>
             </section>

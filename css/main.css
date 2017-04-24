@@ -27,6 +27,7 @@ h2
 p
 {
     line-height:30px;
+    font-size:1.2em;
 }
 /*Header Section*/
 header
@@ -192,4 +193,8 @@ footer a
 #button div div.active
 {
     background-color:#ffffff;
+}
+#description
+{
+    max-width:500px;
 }
