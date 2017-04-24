@@ -46,7 +46,7 @@ include 'php/config.php';
         ?>
         
         <header>
-            <div><span>Vendicant Games</span><br />Trade Show<br /><span>May 16, 6:00pm-7:00pm</span></div>
+            <div><span>Vendicant Games</span><br />Trade Show<br /><span>May 16, 6:00pm-7:30pm</span></div>
         </header>
         
         <div id="button">
@@ -80,7 +80,7 @@ include 'php/config.php';
                 <article id="description">
                     <h2>Join Us</h2>
                     <p>
-                        Web and Game Development invite you to the first Tradeshow where students will highlight their products made this year! RSVP requested using the form to the left.
+                        Join us at the Careerline Tech Center Michigan. Web and Game Development invite you to the first Tradeshow where students will highlight their products made this year! RSVP requested using the form to the left.
                     </p>
                 </article>
             </section>
