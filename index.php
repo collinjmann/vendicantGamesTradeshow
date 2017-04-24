@@ -46,7 +46,7 @@ include 'php/config.php';
         ?>
         
         <header>
-            <div><span>Vendicant Games</span><br />Trade Show</div>
+            <div><span>Vendicant Games</span><br />Trade Show<br /><span>May 16, 6:00pm-7:00pm</span></div>
         </header>
         
         <div id="button">
@@ -80,7 +80,7 @@ include 'php/config.php';
                 <article>
                     <h2>Lorum Ipsum</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Web & Game Development invite you to the 1st Tradeshow where students will highlight their products made this year! RSVP requested using the form to the left.
                     </p>
                 </article>
             </section>
