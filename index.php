@@ -78,7 +78,7 @@ include 'php/config.php';
             
             <section>
                 <article id="description">
-                    <h2>Lorum Ipsum</h2>
+                    <h2>Join Us</h2>
                     <p>
                         Web and Game Development invite you to the first Tradeshow where students will highlight their products made this year! RSVP requested using the form to the left.
                     </p>
