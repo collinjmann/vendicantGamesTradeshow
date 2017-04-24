@@ -80,7 +80,11 @@ include 'php/config.php';
                 <article id="description">
                     <h2>Join Us</h2>
                     <p>
-                        Join us at the Careerline Tech Center Michigan. Web and Game Development invite you to the first Tradeshow where students will highlight their products made this year! RSVP requested using the form to the left.
+                        Web and Game Development invite you to the first Tradeshow where students will highlight their products made this year! RSVP requested using the form to the left.
+                    </p>
+                    
+                    <p>
+                        Venue will be held at the Careerline Tech Center in Holland, Michigan.
                     </p>
                 </article>
             </section>

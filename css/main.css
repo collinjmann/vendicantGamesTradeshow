@@ -28,6 +28,7 @@ p
 {
     line-height:30px;
     font-size:1.2em;
+    padding-bottom:10px;
 }
 /*Header Section*/
 header
@@ -196,5 +197,5 @@ footer a
 }
 #description
 {
-    max-width:500px;
+    max-width:600px;
 }
